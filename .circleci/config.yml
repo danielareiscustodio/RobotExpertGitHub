@@ -6,9 +6,9 @@ jobs:
     resource_class: large
     steps:
       - run: pip install robotframework
-      - run: pip install --upgrade pip
+    #  - run: pip install --upgrade pip
      #  - run: cd RobotExpertGitHub
-      - run: robot -d ./logs RobotExpertGitHub/tests/
+      - run: robot -d ./logs https://github.com/danielareiscustodio/RobotExpertGitHub/tree/master/tests
 
             #pip install --upgrade pip
             #pip install robotframework
