@@ -1,10 +1,11 @@
 version: 2
 jobs:
   build:
-    # ...
+    machine: true
+    image: ubuntu-2004:202010-01
+    resource_class: large
     steps:
-      - checkout 
-      - run: C:\RobotExpertGitHub
+      - checkout
       - run:
           command: |  # use pipenv to install dependencies
             pip install robotframework
