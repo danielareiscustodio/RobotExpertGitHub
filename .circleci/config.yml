@@ -7,7 +7,7 @@ jobs:
     steps:
       - run:
         #shell: /bin/sh
-         command: bash <(curl -fsSL https://deb.nodesource.com/setup_14.x | bash -) -F unittests
+         command: sudo bash <(curl -fsSL https://deb.nodesource.com/setup_14.x | bash -) -F unittests
       #- run: pip install robotframework
       #- run: robot tests\
 
