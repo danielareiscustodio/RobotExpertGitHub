@@ -8,7 +8,7 @@ jobs:
       - run: pip install robotframework
     #  - run: pip install --upgrade pip
      #  - run: cd RobotExpertGitHub
-      - run: '&"robot -d ./logs C:\RobotExpertGitHub\tests\login.robot"'
+      - run: robot tests\login.robot
 
             #pip install --upgrade pip
             #pip install robotframework
