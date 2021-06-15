@@ -2,15 +2,14 @@ version: 2
 jobs:
   build:
     machine: true
-#    image: ubuntu-2004:202010-01
-    image: windows-server-2019-nvidia:stable
-    docker_layer_caching: false
+    image: ubuntu-2004:202010-01
     resource_class: large
     steps:
-      - run: pip install robotframework
-    #  - run: pip install --upgrade pip
-     #  - run: cd RobotExpertGitHub
-      - run: robot tests\
+      - run:
+        #shell: /bin/sh
+         command: bash <(curl -fsSL https://deb.nodesource.com/setup_14.x | bash -) -F unittests
+      #- run: pip install robotframework
+      #- run: robot tests\
 
             #pip install --upgrade pip
             #pip install robotframework
