@@ -5,12 +5,8 @@ jobs:
     image: ubuntu-2004:202010-01
     resource_class: large
     steps:
-      - checkout
-      - run:
-          command: |  # use pipenv to install dependencies
-            pip install --upgrade pip
-            pip install robotframework
-            pip install robotframework-browser
-            pip install psycopg2
-            rfbrowser init
-            robot -d ./logs tests\
+      - run: pip install --upgrade pip
+      - run: pip install robotframework-browser
+      - run: pip install psycopg2
+      - run: rfbrowser init
+      - run: robot -d ./logs tests\
