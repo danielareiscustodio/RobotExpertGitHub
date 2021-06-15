@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run:
           command: |  # use pipenv to install dependencies
+            pip install --upgrade pip
             pip install robotframework
             pip install robotframework-browser
             pip install psycopg2
