@@ -2,7 +2,9 @@ version: 2
 jobs:
   build:
     machine: true
-    image: ubuntu-2004:202010-01
+#    image: ubuntu-2004:202010-01
+    image: windows-server-2019-nvidia:stable
+    docker_layer_caching: false
     resource_class: large
     steps:
       - run: pip install robotframework
