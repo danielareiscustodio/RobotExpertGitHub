@@ -6,6 +6,7 @@ jobs:
     resource_class: large
     steps:
       - run: pip install robotframework
+      - run: pip install robotframework-browser
       - run: robot -d ./logs tests\
 
             #pip install --upgrade pip
