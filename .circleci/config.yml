@@ -6,7 +6,9 @@ jobs:
     resource_class: large
     steps:
       - run: pip install robotframework
+      - run: pip install --upgrade pip
       - run: pip install robotframework-browser
+      - run: pip install psycopg2
       - run: robot -d ./logs tests\
 
             #pip install --upgrade pip
